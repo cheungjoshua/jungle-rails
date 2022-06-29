@@ -3,7 +3,14 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
+  
+  <% if enhanced_cart.empty? %>
 
+    <div class="alert alert-danger" role="alert">
+    <p>The Cart is empty, Please go <a href="<%= root_path %>"> BACK </a> to keep shopping.</p>
+    </div>
+  <% else %>    
+  
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -15,9 +22,9 @@
         </tr>
       </thead>
       <tbody>
-        <% enhanced_cart.each do |item| %>
-          <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
-        <% end %>
+          <% enhanced_cart.each do |item| %>
+            <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
+          <% end %>
       </tbody>
       <tfoot>
         <tr>
@@ -31,7 +38,6 @@
       </tfoot>
     </table>
   </div>
-
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
@@ -48,5 +54,5 @@
       <% end %>
     </div>
   </div>
-
+<% end %>
 </section>
