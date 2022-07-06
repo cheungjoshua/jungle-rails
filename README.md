@@ -4,7 +4,7 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 
 ## Final Product
 
-!["Index page"](https://github.com/cheungjoshua/tinyapp/blob/main/docs/Screen%20Shot%202022-05-19%20at%2021.01.00.png?raw=true)
+!["Index page"](https://github.com/cheungjoshua/jungle-rails/blob/master/doc/jungle-home.png?raw=true)
 
 ## Setup
 
