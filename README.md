@@ -2,6 +2,10 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Final Product
+
+!["Index page"](https://github.com/cheungjoshua/tinyapp/blob/main/docs/Screen%20Shot%202022-05-19%20at%2021.01.00.png?raw=true)
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
